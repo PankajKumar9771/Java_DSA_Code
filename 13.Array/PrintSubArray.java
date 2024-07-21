@@ -1,4 +1,4 @@
-import java.util.*;
+// import java.util.*;
 
 public class PrintSubArray {
     public static void print(int numbers[]) {
