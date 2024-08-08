@@ -23,7 +23,7 @@ public class KadanesAlgo {
     }
 
     public static void main(String[] args) {
-        int numbers[] = { -2, -4, -6, -8, -10 };
+        int numbers[] = { 1,2,3,4,5,6};
         Kadanes(numbers);
     }
 }

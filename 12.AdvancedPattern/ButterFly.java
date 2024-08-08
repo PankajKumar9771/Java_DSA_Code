@@ -37,6 +37,6 @@ public class ButterFly {
     }
 
     public static void main(String[] args) {
-        pattern(14);
+        pattern(4);
     }
 }

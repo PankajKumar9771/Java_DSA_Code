@@ -4,7 +4,7 @@ public class Pairs {
         for (int i = 0; i < numbers.length; i++) {
             int curr = numbers[i];
             for (int j = i + 1; j < numbers.length; j++) {
-                System.out.print("(" + curr + "," + j + ")" + " ");
+                System.out.print("(" + curr + "," + numbers[j] + ")" + " ");
                 TP++;
             }
             System.out.println();
