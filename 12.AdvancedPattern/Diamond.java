@@ -5,13 +5,17 @@ public class Diamond {
             for (int j = 1; j <= (n - i); j++) {
                 System.out.print(" ");
             }
-            //For  stars
+            // For stars
             for (int j = 1; j <= (2 * i) - 1; j++) {
                 System.out.print("*");
             }
             System.out.println();
+
+            for (int k = 0; k < n; k++) {
+                System.out.println(k);
+            }
         }
-        
+
         for (int i = n; i >= 1; i--) {
             // For space
             for (int j = 1; j <= (n - i); j++) {

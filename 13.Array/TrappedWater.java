@@ -15,7 +15,17 @@ public class TrappedWater {
         rightMax[n - 1] = height[n - 1];
         for (int i = n - 2; i >= 0; i--) {
             rightMax[i] = Math.max(rightMax[i + 1], height[i]);
+
         }
+
+        
+//         for (int i = 0; i < rightMax.length; i++) {
+//             System.out.print(rightMax[i]+" ");
+//         }
+// System.out.println();
+//         for (int i = 0; i < leftMax.length; i++) {
+//             System.out.print(leftMax[i]+" ");
+//         }
 
         // loop
         int trapWater = 0;

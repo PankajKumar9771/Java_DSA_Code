@@ -18,14 +18,16 @@ public class Constructors {
         // Using this line all thing copy in s2 but we now change in s1 then he reflect
         // in s2
 
-        s2.password = "xyz";
+        // s2.password = "xyz";
 
-        s1.marks[1] = 100;
+        // s1.marks[1] = 100;
         // copy hone ke bad jab ham s1 me change kar rhe hai tab bhi s2 me reflect kar
         // rha hai idialy aisa nahi hona chahiye
         for (int i = 0; i < s2.marks.length; i++) {
             System.out.println(s2.marks[i]);
         }
+        s1.name = "pnakj";
+        System.out.println(s2.name);
     }
 }
 
@@ -36,12 +38,23 @@ class Student {
     String password;
     int marks[];
 
+    // Deep Copy
+    // Student(Student s1) {
+    // marks = new int[3];
+    // this.name = s1.name;
+    // this.roll_no = s1.roll_no;
+    // for (int i = 0; i < marks.length; i++) {
+    // this.marks[i] = s1.marks[i];
+    // }
+    // }
+
+    // Shallow Copy.
     Student(Student s1) {
-        marks = new int[3];
-        this.name = s1.name;
-        this.roll_no = s1.roll_no;
-        this.marks = s1.marks;
-    }
+    marks = new int[3];
+    this.name = s1.name;
+    this.roll_no = s1.roll_no;
+    this.marks = s1.marks;
+    } 
 
     // Constructor
 
